@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curso Ingeniería de Sistemas</title>
+
+<title>Ingeniería de Sistemas</title>
 
 <!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -13,20 +15,34 @@
 
 </head>
 
-<body class="bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
+<body class="bg-gradient-to-br from-gray-100 to-gray-300 min-h-screen font-sans">
 
 <!-- NAVBAR -->
 <nav class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white p-4 flex justify-between items-center shadow-lg">
+
 <h1 class="text-xl font-bold flex items-center gap-2">
-<i class="fa-solid fa-laptop-code"></i> Ingeniería
+<i class="fa-solid fa-laptop-code"></i>
+Ingeniería de Sistemas
 </h1>
 
 <div class="space-x-4 text-lg">
-<button onclick="mostrar('u1')" class="hover:scale-110 transition"><i class="fa-solid fa-book"></i></button>
-<button onclick="mostrar('u2')" class="hover:scale-110 transition"><i class="fa-solid fa-users"></i></button>
-<button onclick="mostrar('u3')" class="hover:scale-110 transition"><i class="fa-solid fa-microchip"></i></button>
-<button onclick="mostrar('cv')" class="hover:scale-110 transition"><i class="fa-solid fa-file-arrow-up"></i></button>
-<button onclick="mostrar('contacto')" class="hover:scale-110 transition"><i class="fa-solid fa-envelope"></i></button>
+
+<button onclick="mostrar('u1')" class="hover:scale-110 transition">
+<i class="fa-solid fa-book"></i>
+</button>
+
+<button onclick="mostrar('u2')" class="hover:scale-110 transition">
+<i class="fa-solid fa-users"></i>
+</button>
+
+<button onclick="mostrar('u3')" class="hover:scale-110 transition">
+<i class="fa-solid fa-microchip"></i>
+</button>
+
+<button onclick="mostrar('contacto')" class="hover:scale-110 transition">
+<i class="fa-solid fa-envelope"></i>
+</button>
+
 </div>
 </nav>
 
@@ -35,103 +51,229 @@
 
 <!-- UNIDAD 1 -->
 <section id="u1" class="hidden card">
-<h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
-<i class="fa-solid fa-book text-purple-500"></i> Unidad 1
+
+<h2 class="text-2xl font-bold mb-4 text-purple-600">
+Unidad 1
 </h2>
-<ul class="list-disc ml-6 space-y-1">
+
+<ul class="list-disc ml-6 space-y-2">
+
 <li>¿Qué es la ingeniería?</li>
+
 <li>Historia y evolución de la ingeniería de sistemas</li>
-<li>Ingeniería de sistemas vs. otras ramas</li>
-<li>Problemas que resuelve</li>
+
+<li>Ingeniería de sistemas vs otras ingenierías</li>
+
 <li>Pensamiento sistémico</li>
+
 <li>Diagramas de flujo</li>
+
 <li>Teoría General de Sistemas</li>
+
 <li>Sistemas de información</li>
+
 <li>La empresa como sistema</li>
+
 </ul>
+
 </section>
 
 <!-- UNIDAD 2 -->
 <section id="u2" class="hidden card">
-<h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
-<i class="fa-solid fa-users text-pink-500"></i> Unidad 2
+
+<h2 class="text-2xl font-bold mb-4 text-pink-600">
+Unidad 2
 </h2>
-<ul class="list-disc ml-6 space-y-1">
-<li>Ingeniero de sistemas amigoniano</li>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Ingeniero amigoniano</li>
+
 <li>Perfil profesional</li>
+
 <li>Roles ocupacionales</li>
-<li>Impacto social de la tecnología</li>
+
+<li>Impacto social</li>
+
 <li>Netiqueta</li>
+
 <li>Ofimática</li>
+
 </ul>
+
 </section>
 
 <!-- UNIDAD 3 -->
 <section id="u3" class="hidden card">
-<h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
-<i class="fa-solid fa-microchip text-red-500"></i> Unidad 3
-</h2>
-<ul class="list-disc ml-6 space-y-1">
-<li>TIC</li>
-<li>Sistemas computacionales</li>
-<li>Hardware y software</li>
-<li>Inteligencia Artificial</li>
-<li>Sistemas de información</li>
-</ul>
-</section>
 
-<!-- CV -->
-<section id="cv" class="hidden card">
-<h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
-<i class="fa-solid fa-file-arrow-up text-blue-500"></i> Subir CV
+<h2 class="text-2xl font-bold mb-4 text-red-600">
+Unidad 3
 </h2>
-<form>
-<input type="file" class="border p-2 w-full rounded mb-3">
-<button class="bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 transition">
-Subir
-</button>
-</form>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>TIC</li>
+
+<li>Sistemas computacionales</li>
+
+<li>Hardware y software</li>
+
+<li>Inteligencia Artificial</li>
+
+<li>Sistemas de información</li>
+
+</ul>
+
 </section>
 
 <!-- CONTACTO -->
 <section id="contacto" class="hidden card">
-<h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
-<i class="fa-solid fa-envelope text-green-500"></i> Contacto
+
+<h2 class="text-2xl font-bold mb-4 text-green-600">
+Contacto
 </h2>
-<form class="space-y-3">
-<input type="text" placeholder="Nombre" class="border p-2 w-full rounded">
-<input type="email" placeholder="Email" class="border p-2 w-full rounded">
-<textarea placeholder="Mensaje" class="border p-2 w-full rounded"></textarea>
-<button class="bg-green-600 text-white px-4 py-2 rounded hover:scale-105 transition">
+
+<form id="formulario" class="space-y-4">
+
+<input
+type="text"
+id="nombre"
+placeholder="Nombre"
+class="w-full border p-3 rounded-lg"
+required
+>
+
+<input
+type="email"
+id="email"
+placeholder="Correo"
+class="w-full border p-3 rounded-lg"
+required
+>
+
+<textarea
+id="mensaje"
+placeholder="Mensaje"
+class="w-full border p-3 rounded-lg"
+required
+></textarea>
+
+<button
+type="submit"
+class="bg-green-600 text-white px-6 py-3 rounded-lg hover:scale-105 transition"
+>
 Enviar
 </button>
+
 </form>
+
+<p id="estado" class="mt-4 text-center font-bold"></p>
+
 </section>
 
 </div>
 
-<!-- ESTILO -->
+<!-- ESTILOS -->
 <style>
-.card {
-background: white;
-padding: 20px;
-border-radius: 20px;
-box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-animation: fadeIn 0.4s ease-in-out;
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+animation:fade 0.4s;
 }
 
-@keyframes fadeIn {
-from {opacity:0; transform: scale(0.95);}
-to {opacity:1; transform: scale(1);}
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(10px);
 }
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
 </style>
+
+<!-- FIREBASE -->
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+getFirestore,
+collection,
+addDoc
+}
+
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+
+apiKey: "AIzaSyAt8r_S1fPedhO_KQT7KtZGU7_8VoA7_Jo",
+
+authDomain: "ingeniera-60b4a.firebaseapp.com",
+
+projectId: "ingeniera-60b4a",
+
+storageBucket: "ingeniera-60b4a.firebasestorage.app",
+
+messagingSenderId: "386449396064",
+
+appId: "1:386449396064:web:6412c92b0138d90a8e0e05"
+
+};
+
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", async(e)=>{
+
+e.preventDefault();
+
+const nombre = document.getElementById("nombre").value;
+
+const email = document.getElementById("email").value;
+
+const mensaje = document.getElementById("mensaje").value;
+
+await addDoc(collection(db,"mensajes"),{
+
+nombre,
+email,
+mensaje,
+fecha:new Date()
+
+});
+
+document.getElementById("estado").innerHTML =
+"Mensaje enviado correctamente ✅";
+
+formulario.reset();
+
+});
+
+</script>
 
 <!-- SCRIPT -->
 <script>
+
 function mostrar(id){
-document.querySelectorAll('section').forEach(s=>s.classList.add('hidden'));
-document.getElementById(id).classList.remove('hidden');
+
+document.querySelectorAll("section")
+.forEach(sec=>sec.classList.add("hidden"));
+
+document.getElementById(id)
+.classList.remove("hidden");
+
 }
+
 </script>
 
 </body>
